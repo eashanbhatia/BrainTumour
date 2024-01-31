@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Brain Tumour Prediction</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <h1 class="heading">Brain Tumour Prediction &nbsp;<i class="fa-solid fa-brain"></i></h1>
+ <div class="container">
+     <form action="/process_image" method="post" enctype="multipart/form-data">
+    	<input type="file" name="image" accept="image/*" class="inpBtn">
+      <input type="submit" value="Check for Tumour" class="btn">
+     </form>
+      <br><br><br>
+
+    <h4>Possibility for Brain Tumour is: {{ msg }}</h4>
+ </div>
+ <br><br><br>
+<p class="para" align = "right">Team Stumblers <br> (Aman Bhardwaj & Eashan Bhatia)</p>
+
+</body>
+</html>
